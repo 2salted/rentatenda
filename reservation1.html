@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="pictures/Renta Tenda Logo.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    
+    body {
+      font-family: 'Oxygen', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    #myForm {
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    fieldset {
+      padding: 10px;
+      display: none;
+    }
+
+    fieldset.active {
+      display: block;
+    }
+
+    legend {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-family: inherit;
+    }
+
+    select {
+      height: 34px;
+    }
+
+    .form-buttons {
+      margin-top: 20px;
+      overflow: auto;
+    }
+
+    .form-buttons button {
+      float: right;
+      padding: 10px 20px;
+      border: none;
+      background-color: #4caf50;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-buttons button.previous {
+      float: left;
+      background-color: #ccc;
+    }
+
+    .form-buttons button:hover {
+      background-color: #45a049;
+    }
+
+    p#note {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    p#note a {
+      color: #4caf50;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+  <div class="topbar" id="topbar">
+		<i id="fa" class="fa">&#xf095;</i>
+		<a class="phonenbr" target="_blank" href="tel:+351928141105" title="Call Us">+351 928 141 105</a>
+		<p id="location"><i id="locrot" class="fa fa-map-marker"></i>Located in the Archipelago of the Açores on Flores Island</p>
+		<p id="location2"><i id="locrot2" class="fa fa-map-marker"></i>Flores, Açores</p>
+		<div class="dropdown">
+		  <button id="langselect" class="dropbtn">Select Language</button>
+		  <div class="dropdown-content">
+			<a id="en" href="#">English</a>
+			<a id="fr" href="#">Français</a>
+			<a id="pt" href="#">Português</a>
+			<a id="de" href="#">Deutsch</a>
+		  </div>
+		</div>      
+	  </div>  
+	  <header>
+		<a href="index.html"><img src="pictures/Renta Tenda Logo.png"></a>
+		<nav>
+		  <ul>
+			<li><a id="h" href="index.html">Home</a></li>
+			<li><a id="r" href="#pickup-date">Request Reservation</a></li>
+			<li><a id="c" href="#cutext">Contact</a></li>
+		  </ul>
+		</nav>
+	  </header>
+    <div class="sticky">
+      <a class="WhatsApp" aria-label="Chat on WhatsApp" href="https://api.whatsapp.com/send?phone=351928141105&text=I%20am%20in%20the%20Renta%20Tenta%20website%20and%20I%20have%20a%20couple%20inquiries."> <img alt="Chat on WhatsApp" src="pictures/WhatsApp.png"></a>
+    </div>
+  <form id="myForm" action="https://formsubmit.co/rentatenda.info@gmail.com" method="POST">
+    <input type="hidden" name="_honey" style="display: none;">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://2salted.github.io/rentatenda/index.html">
+  
+    <p id="note"><b>NOTE :</b> If the form below does not work <a href="fallbackreservation.html">click here</a></p>
+  
+    <fieldset class="form-step active">
+      <legend>Step 1: Pickup Details</legend>
+      <label for="pickup-date">Pickup Date:</label>
+      <input type="date" id="pickup-date" name="pickup-date" required>
+  
+      <label for="pickup-time">Pickup Time:</label>
+      <input type="time" id="pickup-time" name="pickup-time">
+  
+      <label for="pickup-location">Pickup Location:</label>
+      <select id="pickup-location" name="pickup-location" required>
+        <option value="none selected" disabled selected>Select a location...</option>
+        <option value="Santa cruz das Flores Airport">Santa cruz das Flores Airport</option>
+        <option value="Lajes das Flores Campsite">Lajes das Flores Campsite</option>
+      </select>
+  
+      <div class="form-buttons">
+        <button class="next" type="button" onclick="nextStep()">Next</button>
+      </div>
+    </fieldset>
+  
+    <fieldset class="form-step">
+      <legend>Step 2: Return Details</legend>
+      <label for="return-date">Return Date:</label>
+      <input type="date" id="return-date" name="return-date" required>
+  
+      <label for="return-time">Return Time:</label>
+      <input type="time" id="return-time" name="return-time">
+  
+      <label for="return-location">Return Location:</label>
+      <select id="return-location" name="return-location" required>
+        <option value="none selected" disabled selected>Select a location...</option>
+        <option value="Santa cruz das Flores Airport">Santa cruz das Flores Airport</option>
+        <option value="Lajes das Flores Campsite">Lajes das Flores Campsite</option>
+      </select>
+  
+      <div class="form-buttons">
+        <button class="previous" type="button" onclick="previousStep()">Previous</button>
+        <button class="next" type="button" onclick="nextStep()">Next</button>
+      </div>
+    </fieldset>
+  
+    <fieldset class="form-step">
+      <legend>Step 3: Tent Kit Selection</legend>
+      <label for="selectkit">Select a Tent Kit:</label>
+      <select id="selectkit" name="selectkit" required>
+        <option value="none selected" disabled selected>Select a Kit...</option>
+        <option value="tent kit for 2">Tent Kit for 1</option>
+        <option value="tent kit for 2">Tent Kit for 2</option>
+        <option value="tent kit for 3">Tent Kit for 3</option>
+      </select>
+  
+      <div class="form-buttons">
+        <button class="previous" type="button" onclick="previousStep()">Previous</button>
+        <button class="next" type="button" onclick="nextStep()">Next</button>
+      </div>
+    </fieldset>
+  
+    <fieldset class="form-step">
+      <legend>Step 4: Personal Information</legend>
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+  
+      <label for="extra-questions">Extra Questions:</label>
+      <textarea id="extra-questions" name="extra-questions" placeholder="Enter any additional questions or comments"></textarea>
+  
+      <div class="form-buttons">
+        <button class="previous" type="button" onclick="previousStep()">Previous</button>
+        <button type="submit">Request Reservation</button>
+      </div>
+    </fieldset>
+  </form>
+
+  <footer>
+    <div class="footer-container">
+      <div class="contact-container">
+      <h3>Contact Us</h3>
+      <form action="https://formsubmit.co/rentatenda.info@gmail.com" method="POST">
+        <!--Honeypot-->
+        <input type="text" name="_honey" style="display: none;">
+
+        <!--Disable Captcha-->
+        <input type="hidden" name="_captcha" value="false">
+  
+        <input type="hidden" name="_next" value="https://2salted.github.io/rentatenda/index.html">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter a Valid Email Address" required>
+        <label for="number">Phone Number</label>
+        <input type="number" id="number" name="phone number" placeholder="Enter Phone Number" required>
+        <label for="message">Message</label>
+        <textarea rows="4" id="message" name="message" placeholder="If you have any questions ask here" required></textarea>
+        <button type="submit" class="btn btn-primary" id="submitButton">Send Message</button>
+      </form>
+      </div>
+      <div class="info-container">
+      <h3>Our Location</h3>
+      <p>Santa Cruz das flores</p>
+      <p>9970-320 R. da Esperança</p>
+      <h3>Phone Number</h3>
+      <p>(+351) 928 141 105</p>
+      <h3>Email Address</h3>
+      <p>rentatenda.info@gmail.com</p>
+      </div>
+      <div id="cutext" class="links-container">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="#">View Campsites</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+      </div>
+    </div>     
+    <div class="copyright">
+      <p>&copy; 2023 Renta Tenda. All Rights Reserved.</p>
+    </div>
+    </footer>	 
+    
+  <script>
+    const form = document.getElementById("myForm");
+    const fieldsets = form.getElementsByClassName("form-step");
+    let currentStep = 0;
+  
+    function showStep(step) {
+      for (let i = 0; i < fieldsets.length; i++) {
+        fieldsets[i].classList.remove("active");
+      }
+      fieldsets[step].classList.add("active");
+    }
+  
+    function nextStep() {
+      if (currentStep < fieldsets.length - 1) {
+        currentStep++;
+        showStep(currentStep);
+      }
+    }
+  
+    function previousStep() {
+      if (currentStep > 0) {
+        currentStep--;
+        showStep(currentStep);
+      }
+    }
+
+    
+  </script>
+  <script src="language.js"></script>
+</body>
+</html>
