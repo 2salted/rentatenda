@@ -50,7 +50,7 @@
   <body>
     <div class="topbar" id="topbar">
       <i id="fa" class="fa">&#xf095;</i>
-      <a class="phonenbr" target="_blank" href="tel:+351928141105" title="Call Us">+351 928 141 105</a>
+      <a class="phonenbr" target="_blank" href="tel:+351924314419" title="Call Us">+351 924 314 419</a>
       <p id="location"><i id="locrot" class="fa fa-map-marker"></i>Located in the Archipelago of the Açores on Flores Island</p>
       <p id="location2"><i id="locrot2" class="fa fa-map-marker"></i>Flores, Açores</p>
       <div class="dropdown">
@@ -171,7 +171,7 @@
         <p>Santa Cruz das flores</p>
         <p>9970-320 R. da Esperança</p>
         <h3>Phone Number</h3>
-        <p>(+351) 928 141 105</p>
+        <p>(+351) 924 314 419</p>
         <h3>Email Address</h3>
         <p>rentatenda.info@gmail.com</p>
         </div>
@@ -241,22 +241,21 @@ $(document).ready(function(){
 
 const animation_elements = document.querySelectorAll('.animate-on-scroll, .animate-top-down');
 
-const observer = new IntersectionObserver((entries) => {
-	entries.forEach((entry) => {
-		if (entry.isIntersecting) {
-			entry.target.classList.add('animate');
-		} else {
-			entry.target.classList.remove('animate');
-		}
-	})
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting && !entry.target.hasAttribute('data-animated')) {
+      entry.target.classList.add('animate');
+      entry.target.setAttribute('data-animated', 'true');
+    }
+  });
 }, {
-	threshold: 0.3 // Changed the threshold from 0.5 to 0.3
+  threshold: 0.3 // Changed the threshold from 0.5 to 0.3
 });
 
-for (let i = 0; i < animation_elements.length; i++) {
-	const el = animation_elements[i];
-	observer.observe(el);
-}
+animation_elements.forEach((el) => {
+  observer.observe(el);
+});
+
 
 </script>
 <script src="language.js"></script>
