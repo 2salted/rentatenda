@@ -607,13 +607,13 @@ footer {
 	  }
 	  @media only screen and (max-width: 475px) {
 		#img1 {
-			content: url("pictures/istockphoto-1131390871-612x612.jpg");
+			content: url("pictures/panoramaphone.PNG");
 		  }
 		  #img2 {
-			content: url("pictures/vertical-shot-tent-hill-covered-greenery-during-beautiful-sunrise-morning_181624-59944.png");
+			content: url("pictures/panoramaphone.PNG");
 		  }
 		  #img3 {
-			content: url("pictures/photo-1624923686627-514dd5e57bae.jpg");
+			content: url("pictures/panoramaphone.PNG");
 		  }
 		}
 
