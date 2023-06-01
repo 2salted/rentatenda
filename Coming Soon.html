@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coming Soon</title>
+</head>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+
+</style>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>COMING SOON!</h1>
+      <p>This page is under development.</p>
+      <a href="#" onclick="goBack()">Back</a>
+    </div>
+  </div>
+
+  <script>
+    function goBack() {
+  window.history.back();
+}
+  </script>
+</body>
+</html>
