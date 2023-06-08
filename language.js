@@ -28,6 +28,8 @@ const thesitetext = document.getElementById('thesitetext');
 const litest = document.getElementById('litest');
 const whatweoffertext = document.getElementById('whatweoffertext')
 
+const tenty = document.getElementById('tenty');
+
 //Change the title of the page
 const newTitleEN = "RENTA TENDA - RENT A TENT KIT ON FLORES ISLAND, AZORES | tent rental services"
 const newTitleFR = "RENTA TENDA - LOUEZ UN KIT DE TENTE SUR L'ÎLE DE FLORES, AÇORES | services tent a louer"
@@ -96,6 +98,7 @@ function setLanguage(lang) {
             li13.innerHTML = 'More of What We Offer'
             litest.innerHTML = 'More of At The Campsites'
             document.title = newTitleEN;
+            tenty.innerHTML = 'Our Tent Kits for rent'
             break;
         case 'fr':
             //header translation
@@ -124,6 +127,7 @@ function setLanguage(lang) {
             li12.innerHTML = 'Assistance client 24h/24 et 7j/7'
             li13.innerHTML = 'Plus de ce que nous offrons'
             document.title = newTitleFR;
+            tenty.innerHTML = 'Nos kits de tentes à louer'
             break;
         case 'pt':
             //header translation
@@ -152,6 +156,7 @@ function setLanguage(lang) {
             li12.innerHTML = 'Suporte ao cliente 24/7'
             li13.innerHTML = 'Mais do que oferecemos'
             document.title = newTitlePT;
+            tenty.innerHTML = 'Nossos Kits de Tendas para alugar'
             break;
         case 'de':
             //header translation
@@ -180,6 +185,7 @@ function setLanguage(lang) {
             li12.innerHTML = 'Kundensupport rund um die Uhr'
             li13.innerHTML = 'Mehr von unserem Angebot'
             document.title = newTitleDE;
+            tenty.innerHTML = 'Unsere Zelt-Kits zum Mieten'
             break;
         // Add cases for other languages here
         default:
