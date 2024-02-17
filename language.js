@@ -1,4 +1,4 @@
-const de = document.getElementById('de');
+/* const de = document.getElementById('de');
 const pt = document.getElementById('pt');
 const en = document.getElementById('en');
 const fr = document.getElementById('fr');
@@ -213,4 +213,4 @@ function getLanguageName(lang) {
 // Call setLanguage(savedLang) when the page loads to set the initial language
 document.addEventListener('DOMContentLoaded', function() {
     setLanguage(savedLang);
-});
+}); */
