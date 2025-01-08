@@ -1,166 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>Rent a Tent on Flores Island Azores | Tent Rental Services</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Rent high-quality tent kits for your next outdoor adventures in the archipelago of Flores island. Our tents are durable, easy to set up, and perfect for camping, hiking, and more."
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="pictures/Renta Tenda Logo.png" />
+    <style>
+      section {
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
 
-<head>
-  <title>Rent a Tent on Flores Island Azores | Tent Rental Services</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description"
-    content="Rent high-quality tent kits for your next outdoor adventures in the archipelago of Flores island. Our tents are durable, easy to set up, and perfect for camping, hiking, and more.">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/x-icon" href="pictures/Renta Tenda Logo.png">
-  <style>
-    section {
-      margin-top: 30px;
-      margin-bottom: 40px;
-    }
-
-    .slider-container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    #image-slider {
-      padding-left: 25px;
-      width: 60%;
-      height: auto;
-      overflow: hidden;
-      box-sizing: border-box;
-    }
-
-    #img-slide {
-      display: flex;
-    }
-
-    #img-slide img {
-      border-radius: 16px;
-      border: 2.2px solid #1a1a1a;
-      width: 100%;
-      height: auto;
-    }
-
-    .text-container {
-      width: 40%;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    .text-section {
-      margin-bottom: 20px;
-    }
-
-    .text-section h2 {
-      display: flex;
-      flex-direction: flex-start;
-      font-size: 2.5vw;
-    }
-
-    #specs {
-      display: flex;
-      flex-direction: flex-start;
-    }
-
-    .text-section p {
-      text-align: left;
-      font-size: 1.3vw;
-      margin-bottom: 10px;
-    }
-
-    #ul2 {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-
-    #ul2 li {
-      margin-bottom: 5px;
-      font-size: 1.3vw;
-    }
-
-    .reservation-btn {
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #1bd741;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 1.2vw;
-      transition: background-color 0.2s, transform 0.3s;
-      /* Update transition property */
-    }
-
-    .reservation-btn:hover {
-      background-color: #19b638;
-      transform: scale(1.1);
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
       .slider-container {
-        flex-direction: column;
-      }
-
-      .text-section h2 {
-        font-size: 6vw;
-      }
-
-      .text-section p {
-        font-size: 2.6vw;
-        margin-bottom: 10px;
-      }
-
-      #ul2 {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-      }
-
-      #ul2 li {
-        margin-bottom: 5px;
-        font-size: 2.4vw;
+        display: flex;
+        flex-wrap: wrap;
       }
 
       #image-slider {
-        padding-left: 0px;
+        padding-left: 25px;
+        width: 60%;
+        height: auto;
+        overflow: hidden;
+        box-sizing: border-box;
       }
 
-      .reservation-btn {
-        margin-top: 5px;
-        padding: 10px 20px;
-        background-color: #31d917;
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 2vw;
+      #img-slide {
+        display: flex;
       }
 
-      #image-slider {
+      #img-slide img {
+        border-radius: 16px;
+        border: 2.2px solid #1a1a1a;
         width: 100%;
         height: auto;
-        margin-bottom: 20px;
       }
 
       .text-container {
-        width: 100%;
+        width: 40%;
+        padding: 20px;
+        box-sizing: border-box;
       }
-    }
 
-    @media (max-width: 450px) {
+      .text-section {
+        margin-bottom: 20px;
+      }
+
       .text-section h2 {
-        font-size: 7vw;
+        display: flex;
+        flex-direction: flex-start;
+        font-size: 2.5vw;
+      }
+
+      #specs {
+        display: flex;
+        flex-direction: flex-start;
       }
 
       .text-section p {
-        font-size: 4vw;
+        text-align: left;
+        font-size: 1.3vw;
         margin-bottom: 10px;
       }
 
@@ -172,234 +86,387 @@
 
       #ul2 li {
         margin-bottom: 5px;
-        font-size: 4vw;
-      }
-
-      #image-slider {
-        padding-left: 0px;
+        font-size: 1.3vw;
       }
 
       .reservation-btn {
-        margin-top: 30px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
         padding: 10px 20px;
-        background-color: #31d917;
+        background-color: #1bd741;
         color: #fff;
         border: none;
         border-radius: 8px;
         cursor: pointer;
-        font-size: 3.4vw;
-      }
-    }
-
-    @media (max-width: 380px) {
-      .text-section p {
-        font-size: 4vw;
-        margin-bottom: 10px;
+        font-size: 1.2vw;
+        transition:
+          background-color 0.2s,
+          transform 0.3s;
+        /* Update transition property */
       }
 
-      #ul2 {
-        padding: 0;
-        margin: 0;
-        list-style: none;
+      .reservation-btn:hover {
+        background-color: #19b638;
+        transform: scale(1.1);
       }
 
-      #ul2 li {
-        margin-bottom: 5px;
-        font-size: 4vw;
-      }
-
-      #image-slider {
-        padding-left: 0px;
-      }
-
-      .reservation-btn {
-        margin-top: 30px;
-        padding: 10px 20px;
-        background-color: #31d917;
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 4.2vw;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="topbar" id="topbar">
-    <i id="fa" class="fa">&#xf095;</i>
-    <a class="phonenbr" target="_blank" href="tel:+351924314419" title="Call Us">+351 924 314 419</a>
-    <p id="location"><i id="locrot" class="fa fa-map-marker"></i>Located in the Archipelago of the Açores on Flores
-      Island</p>
-    <p id="location2"><i id="locrot2" class="fa fa-map-marker"></i>Flores, Açores</p>
-    <div class="dropdown">
-      <button id="langselect" class="dropbtn">Select Language</button>
-      <div class="dropdown-content">
-        <a id="en" href="#">English</a>
-        <a id="fr" href="#">Français</a>
-        <a id="pt" href="#">Português</a>
-        <a id="de" href="#">Deutsch</a>
-      </div>
-    </div>
-  </div>
-  <header>
-    <a href="index.html"><img src="pictures/Renta Tenda Logo.png"></a>
-    <nav>
-      <ul>
-        <li><a id="h" href="index.html">Home</a></li>
-        <li><a id="r" href="#getaquote">Get a Quote</a></li>
-        <li><a id="c" href="#cutext">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="sticky">
-    <a class="WhatsApp" aria-label="Chat on WhatsApp"
-      href="https://api.whatsapp.com/send?phone=351924314419&text=I%20am%20in%20the%20Renta%20Tenda%20website%20and%20I%20have%20a%20couple%20inquiries.">
-      <img alt="Chat on WhatsApp" src="pictures/WhatsApp.png"></a>
-  </div>
-  <section id="getaquote">
-    <div class="slider-container">
-      <div id="image-slider">
-        <div id="img-slide">
-          <img src="pictures/newtent (6).JPG" alt="tent kit image 1">
-          <img src="pictures/newtent (2).JPG" alt="tent kit image 2">
-          <img src="pictures/newtent (7).JPG" alt="tent kit image 3">
-          <img src="pictures/newtent (1).JPG" alt="tent kit image 4">
-        </div>
-      </div>
-      <div class="text-container">
-        <div class="text-section">
-          <h2>2-3 person portable tent</h2>
-          <p id="select2text">Experience the perfect outdoor getaway with our Airbnb tent renting service! Immerse
-            yourself in nature's beauty and choose to sleep under the stars. This tent is portable and can be assembled
-            by you on any of the 5 official campsites on the island! We also provide you with 2 sleeping bags,
-            mattresses and pillows. We will meet you at the airport upon your arrival and personally hand you over the
-            equipment. Whether you're an experienced camper or a first-time adventurer, this is the perfect tent for you
-            . Escape the city and create unforgettable memories. Book now for an incredible outdoor retreat! If this
-            listing is fully reserved check out our other listings. <b>We take a damage deposit of €150 cash when you
-              receive the equipment, apart from the payment. You will receive this €150 back at the end of your stay
-              when
-              we meet you to collect the equipment.</b></p>
-        </div>
-        <div class="text-section">
-          <h2 id="specs">Specifications</h2>
-          <ul id="ul2">
-            <li><b>Capacity :</b> 2-3 Person Portable Tent</li>
-            <li><b>Pitching Time :</b> 20 minutes</li>
-            <li><b>Waterproof :</b> Highly Waterproof</li>
-          </ul>
-          <h2 id="pricing20">Our Pricing</h2>
-          <p id="pchange"><b>May, June & September:</b> 35&euro;/night</p>
-          <p id="pchange"><b>July & August:</b> 45&euro;/night</p>
-          <p><b>Note:</b> 2 Minimum nights and after 2
-            people it's 10&euro; per person per night extra. If you need our sleeping kit with a pillow, sleeping bag and mattress it
-            is 7€ per night per person. <br>
-            Payments are cash only! We appreciate your business!</p>
-          <a href="reservation.html" class="reservation-btn">Request Reservation</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="footer-container">
-      <div class="contact-container">
-        <h3>Contact Us</h3>
-        <form action="https://formspree.io/f/mrgvvvwb" method="POST">
-
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter a Valid Email Address" required>
-          <label for="number">Phone Number</label>
-          <input type="number" id="number" name="phone number" placeholder="Enter Phone Number" required>
-          <label for="message">Message</label>
-          <textarea rows="4" id="message" name="message" placeholder="If you have any questions, ask here"
-            required></textarea>
-          <button type="submit" class="btn btn-primary" id="submitButton">Send Message</button>
-        </form>
-      </div>
-      <div class="info-container">
-        <h3>Our Location</h3>
-        <p>Santa Cruz das flores</p>
-        <p>9970-320 R. da Esperança</p>
-        <h3>Phone Number</h3>
-        <p>(+351) 924 314 419</p>
-        <h3>Email Address</h3>
-        <p>rentatenda.info@gmail.com</p>
-      </div>
-      <div id="cutext" class="links-container">
-        <h3>Useful Links</h3>
-        <ul>
-          <li><a href="Coming Soon.html">View Campsites</a></li>
-          <li><a href="Coming Soon.html">FAQ</a></li>
-          <li><a href="Coming Soon.html">Privacy Policy</a></li>
-          <li><a href="Coming Soon.html">Terms of Service</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>&copy; 2024 Renta Tenta. All Rights Reserved.</p>
-    </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    const imgSlide = document.getElementById('img-slide');
-    let slideIndex = 0;
-
-    function showSlides() {
-      const slides = imgSlide.getElementsByTagName('img');
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-      slides[slideIndex - 1].style.display = 'block';
-      setTimeout(showSlides, 4000); // Change slide every 4 seconds
-    }
-
-    showSlides();
-
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on('click', function (event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-          // Store hash
-          var hash = this.hash;
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function () {
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-    const animation_elements = document.querySelectorAll('.animate-on-scroll, .animate-top-down');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-        } else {
-          entry.target.classList.remove('animate');
+      /* Responsive */
+      @media (max-width: 768px) {
+        .slider-container {
+          flex-direction: column;
         }
-      })
-    }, {
-      threshold: 0.3 // Changed the threshold from 0.5 to 0.3
-    });
-    for (let i = 0; i < animation_elements.length; i++) {
-      const el = animation_elements[i];
-      observer.observe(el);
-    }
-  </script>
-  <script src="language.js"></script>
-</body>
 
+        .text-section h2 {
+          font-size: 6vw;
+        }
+
+        .text-section p {
+          font-size: 2.6vw;
+          margin-bottom: 10px;
+        }
+
+        #ul2 {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+        }
+
+        #ul2 li {
+          margin-bottom: 5px;
+          font-size: 2.4vw;
+        }
+
+        #image-slider {
+          padding-left: 0px;
+        }
+
+        .reservation-btn {
+          margin-top: 5px;
+          padding: 10px 20px;
+          background-color: #31d917;
+          color: #fff;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 2vw;
+        }
+
+        #image-slider {
+          width: 100%;
+          height: auto;
+          margin-bottom: 20px;
+        }
+
+        .text-container {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 450px) {
+        .text-section h2 {
+          font-size: 7vw;
+        }
+
+        .text-section p {
+          font-size: 4vw;
+          margin-bottom: 10px;
+        }
+
+        #ul2 {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+        }
+
+        #ul2 li {
+          margin-bottom: 5px;
+          font-size: 4vw;
+        }
+
+        #image-slider {
+          padding-left: 0px;
+        }
+
+        .reservation-btn {
+          margin-top: 30px;
+          padding: 10px 20px;
+          background-color: #31d917;
+          color: #fff;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 3.4vw;
+        }
+      }
+
+      @media (max-width: 380px) {
+        .text-section p {
+          font-size: 4vw;
+          margin-bottom: 10px;
+        }
+
+        #ul2 {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+        }
+
+        #ul2 li {
+          margin-bottom: 5px;
+          font-size: 4vw;
+        }
+
+        #image-slider {
+          padding-left: 0px;
+        }
+
+        .reservation-btn {
+          margin-top: 30px;
+          padding: 10px 20px;
+          background-color: #31d917;
+          color: #fff;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 4.2vw;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="topbar" id="topbar">
+      <i id="fa" class="fa">&#xf095;</i>
+      <a
+        class="phonenbr"
+        target="_blank"
+        href="tel:+351924314419"
+        title="Call Us"
+        >+351 924 314 419</a
+      >
+      <p id="location">
+        <i id="locrot" class="fa fa-map-marker"></i>Located in the Archipelago
+        of the Açores on Flores Island
+      </p>
+      <p id="location2">
+        <i id="locrot2" class="fa fa-map-marker"></i>Flores, Açores
+      </p>
+      <div class="dropdown">
+        <button id="langselect" class="dropbtn">Select Language</button>
+        <div class="dropdown-content">
+          <a id="en" href="#">English</a>
+          <a id="fr" href="#">Français</a>
+          <a id="pt" href="#">Português</a>
+          <a id="de" href="#">Deutsch</a>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="index.html"><img src="pictures/Renta Tenda Logo.png" /></a>
+      <nav>
+        <ul>
+          <li><a id="h" href="index.html">Home</a></li>
+          <li><a id="r" href="#getaquote">Get a Quote</a></li>
+          <li><a id="c" href="#cutext">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="sticky">
+      <a
+        class="WhatsApp"
+        aria-label="Chat on WhatsApp"
+        href="https://api.whatsapp.com/send?phone=351924314419&text=I%20am%20in%20the%20Renta%20Tenda%20website%20and%20I%20have%20a%20couple%20inquiries."
+      >
+        <img alt="Chat on WhatsApp" src="pictures/WhatsApp.png"
+      /></a>
+    </div>
+    <section id="getaquote">
+      <div class="slider-container">
+        <div id="image-slider">
+          <div id="img-slide">
+            <img src="pictures/newtent (6).JPG" alt="tent kit image 1" />
+            <img src="pictures/newtent (2).JPG" alt="tent kit image 2" />
+            <img src="pictures/newtent (7).JPG" alt="tent kit image 3" />
+            <img src="pictures/newtent (1).JPG" alt="tent kit image 4" />
+          </div>
+        </div>
+        <div class="text-container">
+          <div class="text-section">
+            <h2>2-3 person portable tent</h2>
+            <p id="select2text">
+              Experience the perfect outdoor getaway with our Airbnb tent
+              renting service! Immerse yourself in nature's beauty and choose to
+              sleep under the stars. This tent is portable and can be assembled
+              by you on any of the 5 official campsites on the island! Whether
+              you're an experienced camper or a first-time adventurer, this is
+              the perfect tent for you . Escape the city and create
+              unforgettable memories. Book now for an incredible outdoor
+              retreat! If this listing is fully reserved check out our other
+              listings.
+              <b
+                >We take a damage deposit of €150 cash when you receive the
+                equipment, apart from the payment. You will receive this €150
+                back at the end of your stay when we meet you to collect the
+                equipment.</b
+              >
+            </p>
+          </div>
+          <div class="text-section">
+            <h2 id="specs">Specifications</h2>
+            <ul id="ul2">
+              <li><b>Capacity :</b> 2-3 Person Portable Tent</li>
+              <li><b>Pitching Time :</b> 20 minutes</li>
+              <li><b>Waterproof :</b> Highly Waterproof</li>
+            </ul>
+            <h2 id="pricing20">Our Pricing</h2>
+            <p id="pchange"><b>May, June & September:</b> 35&euro;/night</p>
+            <p id="pchange"><b>July & August:</b> 45&euro;/night</p>
+            <p>
+              <b>Note:</b>after 2 people it's 10&euro; per person per night
+              extra. If you need our sleeping kit with a pillow, sleeping bag
+              and mattress it is 7€ per night per person.
+              <br />
+              Payments are cash only! We appreciate your business!
+            </p>
+            <a href="reservation.html" class="reservation-btn"
+              >Request Reservation</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="contact-container">
+          <h3>Contact Us</h3>
+          <form action="https://formspree.io/f/mrgvvvwb" method="POST">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter a Valid Email Address"
+              required
+            />
+            <label for="number">Phone Number</label>
+            <input
+              type="number"
+              id="number"
+              name="phone number"
+              placeholder="Enter Phone Number"
+              required
+            />
+            <label for="message">Message</label>
+            <textarea
+              rows="4"
+              id="message"
+              name="message"
+              placeholder="If you have any questions, ask here"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-primary" id="submitButton">
+              Send Message
+            </button>
+          </form>
+        </div>
+        <div class="info-container">
+          <h3>Our Location</h3>
+          <p>Lajes Das Flores</p>
+          <p>9960-431</p>
+          <h3>Phone Number</h3>
+          <p>(+351) 924 314 419</p>
+          <h3>Email Address</h3>
+          <p>rentatenda.info@gmail.com</p>
+        </div>
+        <div id="cutext" class="links-container">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="Coming Soon.html">View Campsites</a></li>
+            <li><a href="Coming Soon.html">FAQ</a></li>
+            <li><a href="Coming Soon.html">Privacy Policy</a></li>
+            <li><a href="Coming Soon.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Renta Tenta. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      const imgSlide = document.getElementById("img-slide");
+      let slideIndex = 0;
+
+      function showSlides() {
+        const slides = imgSlide.getElementsByTagName("img");
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 4000); // Change slide every 4 seconds
+      }
+
+      showSlides();
+
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            // Store hash
+            var hash = this.hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              },
+            );
+          } // End if
+        });
+      });
+      const animation_elements = document.querySelectorAll(
+        ".animate-on-scroll, .animate-top-down",
+      );
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate");
+            } else {
+              entry.target.classList.remove("animate");
+            }
+          });
+        },
+        {
+          threshold: 0.3, // Changed the threshold from 0.5 to 0.3
+        },
+      );
+      for (let i = 0; i < animation_elements.length; i++) {
+        const el = animation_elements[i];
+        observer.observe(el);
+      }
+    </script>
+    <script src="language.js"></script>
+  </body>
 </html>
