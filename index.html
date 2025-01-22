@@ -92,7 +92,7 @@
     <img id="img2" src="pictures/panorama2.jpg" class="slide">
     <img id="img3" src="pictures/newtent (5).JPG" class="slide">
   </div>
-  <div class="quote" onmouseover="changeText(true)" onmouseout="changeText(false)">
+  <div class="quote" onmouseover="changeText(true)" onmouseout="changeText(false);">
     <span id="tent-text">RENT TENT KITS ON FLORES ISLAND</span>
     <span id="regret-text">THE BEST SOLUTION - YOU WON'T REGRET</span>
   </div>
@@ -127,7 +127,7 @@
           <h2 id="whatweoffertext">What We Offer</h2>
           <ul id="uldiv">
             <li id="li11"><b>Open for booking from May 1st until September 30th</b></li>
-            <li id="li9">Tents in a variety of sizes</a></li>
+            <li id="li9">Tents in a variety of sizes</li>
             <li id="li10">Sleeping Kits (pillow, sleeping bag & mattresses)</li>
             <li id="li12">24/7 customer support</li>
             <li><a id="li13" href="Coming Soon.html">More of What We Offer</a></li>
@@ -167,6 +167,24 @@
             sleeping bags, mattresses. You can pickup the tent in Lajes or we offer a delivery service for an extra cost.</p>
         </div>
       </div>
+          <div class="tent-container">
+          <div class="tent">
+         <img src="pictures/easyport1.jpeg" alt="2 person portable tent">
+          <div class="div-button">
+             <a id="rent3" href="selection4.html" class="rent-button">Rent Now</a>
+          </div>
+          <h3 id="head5">The super easy portable tent</h3>
+          <p id="p4">Experience the perfect island outdoor getaway with our tent renting service!Immerse yourself in nature's beauty and choose to sleep under the stars. This 2 second pop up tent is portable and can be assembled by you on the 5 official campsites on the island. You can pick up the tent in Lajes or we offer a delivery service for an extra cost. If you need our sleeping kit   (pillow, sleeping bag and a mattress)
+           Please let us know.</p>
+        </div>
+        <div class="tent">
+         <img src="pictures/xl1.jpeg" alt="2 person portable tent">
+          <div class="div-button">
+             <a id="rent3" href="selection5.html" class="rent-button">Rent Now</a>
+          </div>
+          <h3 id="head5">2 person XL tent</h3>
+          <p id="p4">Experience the perfect island outdoor getaway with our tent renting service! Immerse yourself in nature's beauty and choose to sleep under the stars. This XL 2-3 person tent is portable and can be assembled by you on the 5 official campsites on the island. You can pick up the tent in Lajes or we offer a delivery service for an extra cost. If you need our sleeping kit   (pillow, sleeping bag and a mattress)
+            Please let us know.</div>
     </section>
   </main>
   <footer>
@@ -210,19 +228,20 @@
       <p>&copy; 2023 Renta Tenda. All Rights Reserved.</p>
     </div>
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
 
   <script>
     // Image slider for hero banner using Javascript here
 
-    let slides = document.querySelectorAll('.slide');
+    let slides = document.querySelectorAll(".slide");
     let currentSlide = 0;
     let slideInterval = setInterval(nextSlide, 5000);
 
     function nextSlide() {
-      slides[currentSlide].classList.remove('active');
+      slides[currentSlide].classList.remove("active");
       currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].classList.add('active');
+      slides[currentSlide].classList.add("active");
     }
     function changeText(hover) {
       const tentText = document.getElementById("tent-text");
@@ -237,8 +256,7 @@
     }
     $(document).ready(function () {
       // Add smooth scrolling to all links
-      $("a").on('click', function (event) {
-
+      $("a").on("click", function (event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
           // Prevent default anchor click behavior
@@ -249,37 +267,45 @@
 
           // Using jQuery's animate() method to add smooth page scroll
           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            },
+          );
         } // End if
       });
     });
 
-    const animation_elements = document.querySelectorAll('.animate-on-scroll, .animate-top-down');
+    const animation_elements = document.querySelectorAll(
+      ".animate-on-scroll, .animate-top-down",
+    );
 
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && !entry.target.hasAttribute('data-animated')) {
-          entry.target.classList.add('animate');
-          entry.target.setAttribute('data-animated', 'true');
-        }
-      });
-    }, {
-      threshold: 0.3 // Changed the threshold from 0.5 to 0.3
-    });
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !entry.target.hasAttribute("data-animated")) {
+            entry.target.classList.add("animate");
+            entry.target.setAttribute("data-animated", "true");
+          }
+        });
+      },
+      {
+        threshold: 0.3, // Changed the threshold from 0.5 to 0.3
+      },
+    );
 
     animation_elements.forEach((el) => {
       observer.observe(el);
     });
-
-
-  </script>
-  <script src="language.js"></script>
+  
+</script>
+  <script src="language.js">
+</script>
 </body>
 
 </html>
