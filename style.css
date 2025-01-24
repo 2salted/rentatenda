@@ -4,6 +4,10 @@
   margin: 0;
   padding: 0;
 }
+
+.hiddingdivs {
+  display: hidden;
+}
 /* General styles */
 body {
   font-family: "Oxygen", sans-serif;
@@ -376,6 +380,10 @@ main section a {
   border-radius: 4px;
   transition: all 0.3s ease;
 }
+.tenthidden:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
 .tent:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
@@ -406,7 +414,20 @@ header img:hover {
   margin-bottom: 20px;
   border: 1.5px solid #1a1a1a;
 }
-
+.tenthidden img {
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+  height: auto;
+  object-fit: fill;
+  object-position: center;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1.5px solid #1a1a1a;
+}
+.tenthidden h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 .tent h3 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -535,6 +556,9 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+.tenthidden img {
+    height: auto;
+  }
   .tent img {
     height: auto;
   }
@@ -597,6 +621,10 @@ footer {
     padding-bottom: 0px;
     padding-top: 0px;
   }
+#rentals .tenthidden {
+    width: 100%;
+  }
+
   #rentals .tent {
     width: 100%;
   }
@@ -644,7 +672,9 @@ footer {
     width: 40px;
     height: 40px;
   }
-
+.tenthidden {
+    width: calc(50% - 20px);
+  }
   .tent {
     width: calc(50% - 20px);
   }

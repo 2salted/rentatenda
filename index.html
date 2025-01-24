@@ -1,311 +1,442 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>
+      RENTA TENDA - RENT A TENT KIT ON FLORES ISLAND, AZORES | tent rental
+      services
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="HOMEPAGE: Rent high-quality tent kits for your next outdoor adventures in the archipelago of Flores island. Our tents are durable, easy to set up, and perfect for camping, hiking, and more."
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="pictures/Renta Tenda Logo.png" />
+  </head>
+  <style>
+    .animate-on-scroll {
+      opacity: 0;
+      box-shadow: 5px 8px 2px rgba(0, 0, 0, 0.2);
+      transform: translate(-100px, 0);
+      transition: all 0.4s ease-out;
+      transition-delay: 0s;
+    }
 
-<head>
-  <title>RENTA TENDA - RENT A TENT KIT ON FLORES ISLAND, AZORES | tent rental services</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description"
-    content="HOMEPAGE: Rent high-quality tent kits for your next outdoor adventures in the archipelago of Flores island. Our tents are durable, easy to set up, and perfect for camping, hiking, and more.">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/x-icon" href="pictures/Renta Tenda Logo.png">
-</head>
-<style>
-  .animate-on-scroll {
-    opacity: 0;
-    box-shadow: 5px 8px 2px rgba(0, 0, 0, 0.20);
-    transform: translate(-100px, 0);
-    transition: all 0.4s ease-out;
-    transition-delay: 0s;
-  }
+    .animate-top-down {
+      opacity: 0;
+      transform: translate(0, -300px);
+      transition: all 0.4s ease-out;
+      transition-delay: 0s;
+    }
 
-  .animate-top-down {
-    opacity: 0;
-    transform: translate(0, -300px);
-    transition: all 0.4s ease-out;
-    transition-delay: 0s;
-  }
+    .animate {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
 
-  .animate {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
+    .box {
+      border-radius: 14px;
+      border: 2px solid #797979;
+    }
 
-  .box {
-    border-radius: 14px;
-    border: 2px solid #797979;
-  }
+    .box:nth-child(2) {
+      transition-delay: 0.2s;
+      /* Reduce transition delay to improve animation */
+    }
 
-  .box:nth-child(2) {
-    transition-delay: 0.2s;
-    /* Reduce transition delay to improve animation */
-  }
+    .box:nth-child(3) {
+      transition-delay: 0.4s;
+      /* Reduce transition delay to improve animation */
+    }
 
-  .box:nth-child(3) {
-    transition-delay: 0.4s;
-    /* Reduce transition delay to improve animation */
-  }
+    #litest {
+      display: none;
+    }
 
-  #litest {
-    display: none;
-  }
+    #li13 {
+      display: none;
+    }
+  </style>
 
-  #li13 {
-    display: none;
-  }
-</style>
-
-<body>
-  <div class="topbar" id="topbar">
-    <i id="fa" class="fa">&#xf095;</i>
-    <a class="phonenbr" target="_blank" href="tel:+351924314419" title="Call Us">+351 924 314 419</a>
-    <p id="location"><i id="locrot" class="fa fa-map-marker"></i>Located in the Archipelago of the Açores on Flores
-      Island</p>
-    <p id="location2"><i id="locrot2" class="fa fa-map-marker"></i>Flores, Açores</p>
-    <div class="dropdown">
-      <button id="langselect" class="dropbtn">Select Language</button>
-      <div class="dropdown-content">
-        <a id="en" href="#">English</a>
-        <a id="fr" href="#">Français</a>
-        <a id="pt" href="#">Português</a>
-        <a id="de" href="#">Deutsch</a>
+  <body>
+    <div class="topbar" id="topbar">
+      <i id="fa" class="fa">&#xf095;</i>
+      <a
+        class="phonenbr"
+        target="_blank"
+        href="tel:+351924314419"
+        title="Call Us"
+        >+351 924 314 419</a
+      >
+      <p id="location">
+        <i id="locrot" class="fa fa-map-marker"></i>Located in the Archipelago
+        of the Açores on Flores Island
+      </p>
+      <p id="location2">
+        <i id="locrot2" class="fa fa-map-marker"></i>Flores, Açores
+      </p>
+      <div class="dropdown">
+        <button id="langselect" class="dropbtn">Select Language</button>
+        <div class="dropdown-content">
+          <a id="en" href="#">English</a>
+          <a id="fr" href="#">Français</a>
+          <a id="pt" href="#">Português</a>
+          <a id="de" href="#">Deutsch</a>
+        </div>
       </div>
     </div>
-  </div>
-  <header>
-    <a href="index.html"><img src="pictures/Renta Tenda Logo.png"></a>
-    <nav>
-      <ul>
-        <li><a id="h" href="#topbar">Home</a></li>
-        <li><a id="r" href="#tenty">Rentals</a></li>
-        <li><a id="c" href="#cutext">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="slider">
-    <img id="img1" src="pictures/Panorama.JPG" class="slide active">
-    <img id="img2" src="pictures/panorama2.jpg" class="slide">
-    <img id="img3" src="pictures/newtent (5).JPG" class="slide">
-  </div>
-  <div class="quote" onmouseover="changeText(true)" onmouseout="changeText(false);">
-    <span id="tent-text">RENT TENT KITS ON FLORES ISLAND</span>
-    <span id="regret-text">THE BEST SOLUTION - YOU WON'T REGRET</span>
-  </div>
-  <div class="sticky">
-    <a class="WhatsApp" aria-label="Chat on WhatsApp"
-      href="https://api.whatsapp.com/send?phone=351924314419&text=I%20am%20in%20the%20Renta%20Tenda%20website%20and%20I%20have%20a%20couple%20inquiries.">
-      <img alt="Chat on WhatsApp" src="pictures/WhatsApp.png"></a>
-  </div>
-  <main>
-    <section class=" boxes topsection" id="home">
-      <div class="flex-container">
-        <div class="box animate-on-scroll">
-          <h2 id="whyustext">Why Us</h2>
-          <ul id="uldiv">
-            <li id="li1">High-quality tent kits</li>
-            <li id="li2">Expert customer service</li>
-            <li id="li3">Easy equipment pickup & airport special delivery</li>
-            <li id="li4">Our rentals comes in a kit with all your outdoor needs!</li>
-          </ul>
-        </div>
-        <div class="box animate-on-scroll">
-          <h2 id="thesitetext">At The Campsites</h2>
-          <ul id="uldiv">
-            <li id="li5">Showers & Toilets</li>
-            <li id="li6">BBQ area (including wood)</li>
-            <li id="li7">Electricity for charging devices</li>
-            <li id="li8">Picnic tables</li>
-            <li><a id="litest" href="Coming Soon.html">More of At The Campsites</a></li>
-          </ul>
-        </div>
-        <div class="box animate-on-scroll">
-          <h2 id="whatweoffertext">What We Offer</h2>
-          <ul id="uldiv">
-            <li id="li11"><b>Open for booking from May 1st until September 30th</b></li>
-            <li id="li9">Tents in a variety of sizes</li>
-            <li id="li10">Sleeping Kits (pillow, sleeping bag & mattresses)</li>
-            <li id="li12">24/7 customer support</li>
-            <li><a id="li13" href="Coming Soon.html">More of What We Offer</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="rentals">
-      <h2 id="tenty">Our Tent Kits for rent</h2>
-      <div class="tent-container">
-        <div id="tent1" class="tent">
-          <img src="pictures/tent1img2.jpeg" alt="2 person Tent">
-          <div class="div-button">
-            <a id="rent1" href="selection1.html" class="rent-button">Rent Now</a>
+    <header>
+      <a href="index.html"><img src="pictures/Renta Tenda Logo.png" /></a>
+      <nav>
+        <ul>
+          <li><a id="h" href="#topbar">Home</a></li>
+          <li><a id="r" href="#tenty">Rentals</a></li>
+          <li><a id="c" href="#cutext">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="slider">
+      <img id="img1" src="pictures/Panorama.JPG" class="slide active" />
+      <img id="img2" src="pictures/panorama2.jpg" class="slide" />
+      <img id="img3" src="pictures/newtent (5).JPG" class="slide" />
+    </div>
+    <div
+      class="quote"
+      onmouseover="changeText(true)"
+      onmouseout="changeText(false);"
+    >
+      <span id="tent-text">RENT TENT KITS ON FLORES ISLAND</span>
+      <span id="regret-text">THE BEST SOLUTION - YOU WON'T REGRET</span>
+    </div>
+    <div class="sticky">
+      <a
+        class="WhatsApp"
+        aria-label="Chat on WhatsApp"
+        href="https://api.whatsapp.com/send?phone=351924314419&text=I%20am%20in%20the%20Renta%20Tenda%20website%20and%20I%20have%20a%20couple%20inquiries."
+      >
+        <img alt="Chat on WhatsApp" src="pictures/WhatsApp.png"
+      /></a>
+    </div>
+    <main>
+      <section class="boxes topsection" id="home">
+        <div class="flex-container">
+          <div class="box animate-on-scroll">
+            <h2 id="whyustext">Why Us</h2>
+            <ul id="uldiv">
+              <li id="li1">High-quality tent kits</li>
+              <li id="li2">Expert customer service</li>
+              <li id="li3">Easy equipment pickup & airport special delivery</li>
+              <li id="li4">
+                Our rentals comes in a kit with all your outdoor needs!
+              </li>
+            </ul>
           </div>
-          <h3 id="head3">2 person extra comfort tent</h3>
-          <p id="p2">Immerse yourself in nature's beauty and choose to sleep under the stars. This 2 person extra Comfort tent will be ready when you arrive, we assemble and disassemble the tent for you including a top quality air mattress, with two sleeping bags and two pillows.
-            The Lajes Campsite is quiet, clean and has everything you will need, hot showers, toilets, BBQ area with wood. Walking distance to the supermarket, beach, restaurants and bus stop with Ocean views.</p>
-        </div>
-        <div class="tent" id="tent2">
-          <img class="tentpic2" src="pictures/newtent (7).JPG" alt="4 person tent">
-          <div class="div-button">
-            <a id="rent2" href="selection2.html" class="rent-button">Rent Now</a>
+          <div class="box animate-on-scroll">
+            <h2 id="thesitetext">At The Campsites</h2>
+            <ul id="uldiv">
+              <li id="li5">Showers & Toilets</li>
+              <li id="li6">BBQ area (including wood)</li>
+              <li id="li7">Electricity for charging devices</li>
+              <li id="li8">Picnic tables</li>
+              <li>
+                <a id="litest" href="Coming Soon.html"
+                  >More of At The Campsites</a
+                >
+              </li>
+            </ul>
           </div>
-          <h3 id="head4">2-3 person portable tent</h3>
-          <p id="p3">Experience the perfect outdoor getaway with our Airbnb tent renting service! Immerse yourself in nature's beauty and choose to sleep under the stars. This tent is portable and can be assembled by you on any of the 5 official campsites on the island! If you need our sleeping kit that includes pillows, sleeping bags and a mattress, please let us know. Whether you're an experienced camper or a first-time adventurer, this is the perfect tent for you.</p>
-        </div>
-        <div class="tent">
-          <img src="pictures/tent3.01.JPG" alt="2 person portable tent">
-          <div class="div-button">
-            <a id="rent3" href="selection3.html" class="rent-button">Rent Now</a>
+          <div class="box animate-on-scroll">
+            <h2 id="whatweoffertext">What We Offer</h2>
+            <ul id="uldiv">
+              <li id="li11">
+                <b>Open for booking from May 1st until September 30th</b>
+              </li>
+              <li id="li9">Tents in a variety of sizes</li>
+              <li id="li10">
+                Sleeping Kits (pillow, sleeping bag & mattresses)
+              </li>
+              <li id="li12">24/7 customer support</li>
+              <li>
+                <a id="li13" href="Coming Soon.html">More of What We Offer</a>
+              </li>
+            </ul>
           </div>
-          <h3 id="head5">2 person hiking tent</h3>
-          <p id="p4">Immerse yourself in
-            nature's beauty and choose to sleep under the stars. This tent is perfect for all you hikers coming to the
-            island to Walk about our beautiful trails. We will provide you with especially compact light weight tent 2
-            sleeping bags, mattresses. You can pickup the tent in Lajes or we offer a delivery service for an extra cost.</p>
         </div>
-      </div>
-          <div class="tent-container">
+      </section>
+      <section id="rentals">
+        <h2 id="tenty">Our Tent Kits for rent</h2>
+        <div class="tent-container">
+          <div id="tent1" class="tent">
+            <img src="pictures/tent1img2.jpeg" alt="2 person Tent" />
+            <div class="div-button">
+              <a id="rent1" href="selection1.html" class="rent-button"
+                >Rent Now</a
+              >
+            </div>
+            <h3 id="head3">2 person extra comfort tent</h3>
+            <p id="p2">
+              Immerse yourself in nature's beauty and choose to sleep under the
+              stars. This 2 person extra Comfort tent will be ready when you
+              arrive, we assemble and disassemble the tent for you including a
+              top quality air mattress, with two sleeping bags and two pillows.
+              The Lajes Campsite is quiet, clean and has everything you will
+              need, hot showers, toilets, BBQ area with wood. Walking distance
+              to the supermarket, beach, restaurants and bus stop with Ocean
+              views.
+            </p>
+          </div>
+          <div class="tent" id="tent2">
+            <img
+              class="tentpic2"
+              src="pictures/newtent (7).JPG"
+              alt="4 person tent"
+            />
+            <div class="div-button">
+              <a id="rent2" href="selection2.html" class="rent-button"
+                >Rent Now</a
+              >
+            </div>
+            <h3 id="head4">2-3 person portable tent</h3>
+            <p id="p3">
+              Experience the perfect outdoor getaway with our Airbnb tent
+              renting service! Immerse yourself in nature's beauty and choose to
+              sleep under the stars. This tent is portable and can be assembled
+              by you on any of the 5 official campsites on the island! If you
+              need our sleeping kit that includes pillows, sleeping bags and a
+              mattress, please let us know. Whether you're an experienced camper
+              or a first-time adventurer, this is the perfect tent for you.
+            </p>
+          </div>
           <div class="tent">
-         <img src="pictures/easyport1.jpeg" alt="2 person portable tent">
-          <div class="div-button">
-             <a id="rent3" href="selection4.html" class="rent-button">Rent Now</a>
+            <img src="pictures/tent3.01.JPG" alt="2 person portable tent" />
+            <div class="div-button">
+              <a id="rent3" href="selection3.html" class="rent-button"
+                >Rent Now</a
+              >
+            </div>
+            <h3 id="head5">2 person hiking tent</h3>
+            <p id="p4">
+              Immerse yourself in nature's beauty and choose to sleep under the
+              stars. This tent is perfect for all you hikers coming to the
+              island to Walk about our beautiful trails. We will provide you
+              with especially compact light weight tent 2 sleeping bags,
+              mattresses. You can pickup the tent in Lajes or we offer a
+              delivery service for an extra cost.
+            </p>
           </div>
-          <h3 id="head5">The super easy portable tent</h3>
-          <p id="p4">Experience the perfect island outdoor getaway with our tent renting service!Immerse yourself in nature's beauty and choose to sleep under the stars. This 2 second pop up tent is portable and can be assembled by you on the 5 official campsites on the island. You can pick up the tent in Lajes or we offer a delivery service for an extra cost. If you need our sleeping kit   (pillow, sleeping bag and a mattress)
-           Please let us know.</p>
         </div>
-        <div class="tent">
-         <img src="pictures/xl1.jpeg" alt="2 person portable tent">
-          <div class="div-button">
-             <a id="rent3" href="selection5.html" class="rent-button">Rent Now</a>
+        <div class="tent-container">
+          <div class="tent">
+            <img src="pictures/easyport1.jpeg" alt="2 person portable tent" />
+            <div class="div-button">
+              <a id="rent3" href="selection4.html" class="rent-button"
+                >Rent Now</a
+              >
+            </div>
+            <h3 id="head5">The super easy portable tent</h3>
+            <p id="p4">
+              Experience the perfect island outdoor getaway with our tent
+              renting service!Immerse yourself in nature's beauty and choose to
+              sleep under the stars. This 2 second pop up tent is portable and
+              can be assembled by you on the 5 official campsites on the island.
+              You can pick up the tent in Lajes or we offer a delivery service
+              for an extra cost. If you need our sleeping kit (pillow, sleeping
+              bag and a mattress) Please let us know.
+            </p>
           </div>
-          <h3 id="head5">2 person XL tent</h3>
-          <p id="p4">Experience the perfect island outdoor getaway with our tent renting service! Immerse yourself in nature's beauty and choose to sleep under the stars. This XL 2-3 person tent is portable and can be assembled by you on the 5 official campsites on the island. You can pick up the tent in Lajes or we offer a delivery service for an extra cost. If you need our sleeping kit   (pillow, sleeping bag and a mattress)
-            Please let us know.</div>
-    </section>
-  </main>
-  <footer>
-    <div class="footer-container">
-      <div class="contact-container">
-        <h3>Contact Us</h3>
-        <form action="https://formspree.io/f/mrgvvvwb" method="POST">
-
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter a Valid Email Address" required>
-          <label for="number">Phone Number</label>
-          <input type="number" id="number" name="phone number" placeholder="Enter Phone Number" required>
-          <label for="message">Message</label>
-          <textarea rows="4" id="message" name="message" placeholder="If you have any questions ask here"
-            required></textarea>
-          <button type="submit" class="btn btn-primary" id="submitButton">Send Message</button>
-        </form>
-      </div>
-      <div class="info-container">
-        <h3>Our Location</h3>
+          <div class="tent">
+            <img src="pictures/xl1.jpeg" alt="2 person portable tent" />
+            <div class="div-button">
+              <a id="rent3" href="selection5.html" class="rent-button"
+                >Rent Now</a
+              >
+            </div>
+            <h3 id="head5">2 person XL tent</h3>
+            <p id="p4">
+              Experience the perfect island outdoor getaway with our tent
+              renting service! Immerse yourself in nature's beauty and choose to
+              sleep under the stars. This XL 2-3 person tent is portable and can
+              be assembled by you on the 5 official campsites on the island. You
+              can pick up the tent in Lajes or we offer a delivery service for
+              an extra cost. If you need our sleeping kit (pillow, sleeping bag
+              and a mattress) Please let us know.
+            </p>
+          </div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+          <div class="hiddingdivs"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="contact-container">
+          <h3>Contact Us</h3>
+          <form action="https://formspree.io/f/mrgvvvwb" method="POST">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter a Valid Email Address"
+              required
+            />
+            <label for="number">Phone Number</label>
+            <input
+              type="number"
+              id="number"
+              name="phone number"
+              placeholder="Enter Phone Number"
+              required
+            />
+            <label for="message">Message</label>
+            <textarea
+              rows="4"
+              id="message"
+              name="message"
+              placeholder="If you have any questions ask here"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-primary" id="submitButton">
+              Send Message
+            </button>
+          </form>
+        </div>
+        <div class="info-container">
+          <h3>Our Location</h3>
           <p>Lajes Das Flores</p>
           <p>9960-431</p>
-        <h3>Phone Number</h3>
-        <p>(+351) 924 314 419</p>
-        <h3>Email Address</h3>
-        <p>rentatenda.info@gmail.com</p>
+          <h3>Phone Number</h3>
+          <p>(+351) 924 314 419</p>
+          <h3>Email Address</h3>
+          <p>rentatenda.info@gmail.com</p>
+        </div>
+        <div id="cutext" class="links-container">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="Coming Soon.html">View Campsites</a></li>
+            <li><a href="Coming Soon.html">FAQ</a></li>
+            <li><a href="Coming Soon.html">Privacy Policy</a></li>
+            <li><a href="Coming Soon.html">Terms of Service</a></li>
+          </ul>
+        </div>
       </div>
-      <div id="cutext" class="links-container">
-        <h3>Useful Links</h3>
-        <ul>
-          <li><a href="Coming Soon.html">View Campsites</a></li>
-          <li><a href="Coming Soon.html">FAQ</a></li>
-          <li><a href="Coming Soon.html">Privacy Policy</a></li>
-          <li><a href="Coming Soon.html">Terms of Service</a></li>
-        </ul>
+      <div class="copyright">
+        <p>&copy; 2023 Renta Tenda. All Rights Reserved.</p>
       </div>
-    </div>
-    <div class="copyright">
-      <p>&copy; 2023 Renta Tenda. All Rights Reserved.</p>
-    </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script>
-    // Image slider for hero banner using Javascript here
+    <script>
+      // Image slider for hero banner using Javascript here
 
-    let slides = document.querySelectorAll(".slide");
-    let currentSlide = 0;
-    let slideInterval = setInterval(nextSlide, 5000);
+      let slides = document.querySelectorAll(".slide");
+      let currentSlide = 0;
+      let slideInterval = setInterval(nextSlide, 5000);
 
-    function nextSlide() {
-      slides[currentSlide].classList.remove("active");
-      currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].classList.add("active");
-    }
-    function changeText(hover) {
-      const tentText = document.getElementById("tent-text");
-      const regretText = document.getElementById("regret-text");
-      if (hover) {
-        tentText.style.opacity = "0";
-        regretText.style.opacity = "1";
-      } else {
-        tentText.style.opacity = "1";
-        regretText.style.opacity = "0";
+      function nextSlide() {
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add("active");
       }
-    }
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on("click", function (event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
+      function changeText(hover) {
+        const tentText = document.getElementById("tent-text");
+        const regretText = document.getElementById("regret-text");
+        if (hover) {
+          tentText.style.opacity = "0";
+          regretText.style.opacity = "1";
+        } else {
+          tentText.style.opacity = "1";
+          regretText.style.opacity = "0";
+        }
+      }
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-          // Store hash
-          var hash = this.hash;
+            // Store hash
+            var hash = this.hash;
 
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top,
-            },
-            800,
-            function () {
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            },
-          );
-        } // End if
-      });
-    });
-
-    const animation_elements = document.querySelectorAll(
-      ".animate-on-scroll, .animate-top-down",
-    );
-
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !entry.target.hasAttribute("data-animated")) {
-            entry.target.classList.add("animate");
-            entry.target.setAttribute("data-animated", "true");
-          }
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              },
+            );
+          } // End if
         });
-      },
-      {
-        threshold: 0.3, // Changed the threshold from 0.5 to 0.3
-      },
-    );
+      });
 
-    animation_elements.forEach((el) => {
-      observer.observe(el);
-    });
-  
-</script>
-  <script src="language.js">
-</script>
-</body>
+      const animation_elements = document.querySelectorAll(
+        ".animate-on-scroll, .animate-top-down",
+      );
 
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (
+              entry.isIntersecting &&
+              !entry.target.hasAttribute("data-animated")
+            ) {
+              entry.target.classList.add("animate");
+              entry.target.setAttribute("data-animated", "true");
+            }
+          });
+        },
+        {
+          threshold: 0.3, // Changed the threshold from 0.5 to 0.3
+        },
+      );
+
+      animation_elements.forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+    <script src="language.js"></script>
+  </body>
 </html>
